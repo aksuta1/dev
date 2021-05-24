@@ -16,12 +16,12 @@ body {
   background-size: 100%;
 }
 
-a:hover {
+.nav-menu:hover {
   text-decoration: none !important;
   color: #5c5651;
 }
 
-a {
+.nav-menu {
   color: #22201e;
   background-color: transparent;
   display: inline-block;
@@ -32,9 +32,8 @@ a {
   font-weight: bold;
 }
 
-a:after {
+.nav-menu:after {
   background-color: #46eb61;
-  ;
   display: block;
   content: "";
   height: 5px;
@@ -42,8 +41,8 @@ a:after {
   transition: width .5s ease-in-out;
 }
 
-a:hover:after,
-a:focus:after {
+.nav-menu:hover:after,
+.nav-menu:focus:after {
   width: 100%;
 }
 
@@ -105,6 +104,8 @@ menu-top .navbar {
 .menu-top .container,
 .menu-top .navbar-collapse {
   padding-left: 0px;
+  margin-top: 20px;
+
 }
 
 .main-menu .navbar-brand span {
@@ -122,6 +123,7 @@ menu-top .navbar {
   top: 5%;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .main-menu .navbar-inverse {
@@ -144,7 +146,7 @@ menu-top .navbar {
 /*about*/
 #about {
   background-color: rgba(250, 248, 250, 0.836);
-  min-height: 700px;
+  min-height: 650px;
   border: none;
 }
 
@@ -167,9 +169,8 @@ menu-top .navbar {
   line-height: 30px;
 }
 
-.about-title,
-.contact-title {
-  margin-bottom: 45px;
+.about-title {
+  margin-bottom: 20px;
   font-size: 30px;
 }
 
@@ -274,19 +275,20 @@ menu-top .navbar {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 40px;
+  margin-top: 30px;
 }
 
 .service-text {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
-.fa,
-.fas {
+.fab,
+.fa{
   font-weight: 900;
   padding-top: 25px;
   font-size: 50px;
-  padding-top: 35px;
-}
+  color:rgb(1, 24, 59)
+ }
 
 /*=============projects==========================*/
 #projects {
@@ -305,65 +307,37 @@ menu-top .navbar {
 
 .projects-text {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
+  
+ 
 
 
 /*=============contact==========================*/
 
-#contact {
-  background-color: rgb(23, 197, 75);
-  min-height: 700px;
-  border: none;
-}
-
-.box-contact {
-  background-color: #fff;
-  margin-top: 125px;
-  padding-bottom: 67px;
-}
-
-.btn-info {
-  background-color: rgb(23, 197, 75);
-  border-color: rgb(23, 197, 75);
+#form {
+  background-color: rgba(250, 248, 250, 0.836);
 
 }
-
-.contact-text {
-  line-height: 35px;
+.image{
+  position: relative;
+    text-align: center;
+ }
+.text-img{
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  transform: rotate(-25deg) 
 }
-
-.contact-block {
-  padding-left: 15px;
-  padding-right: 25px;
+.contact-mail{
+  position: absolute;
+  top: 40%;
+  right: 32%;
+  transform: rotate(-25deg) 
 }
-
-.mail-block {
-  padding-left: 15px;
-  padding-right: 25px;
-}
-
-.contact-number {
-  color: #000;
-  font-size: 40px;
-}
-
-.fa,
-.fas {
-  font-size: 30px;
-}
-
-/*=============resume==========================*/
-.btn-primary {
-  background-color: #0a0b0a8f
-}
-
-.btn-block {
-  height: 150px;
-}
-
-/*=============copy==========================*/
+ 
+ /*=============copy==========================*/
 #copy {
   background: #3f464c;
   padding: 15px 0;
@@ -375,6 +349,8 @@ menu-top .navbar {
   font-size: 14px;
   text-align: center;
 }
+ 
+
 
 /*=============kartochki==========================*/
 .photo {
@@ -414,7 +390,7 @@ menu-top .navbar {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #000;
+  background-color: rgb(230, 230, 227);
   margin-right: 10px;
   width: 100%;
   height: 100%;
@@ -424,17 +400,40 @@ menu-top .navbar {
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
+.demo-link:hover{
+  text-decoration: none;
+}
 
-.p {
+.description-text {
   font-size: 20px;
   line-height: 26px;
-  text-align: center;
-  color: rgb(243, 239, 239);
+  color: rgb(12, 11, 11);
   flex-basis: 100%;
 }
 
+.btn-info{
+  margin-left: 20px;
+}
+
+.contact-title {
+  margin-bottom: 0px;
+  margin-top: 30px; 
+  font-size: 30px;
+}
+
+.image{
+  margin-top: 60px;
+}
+  
+.form{
+  margin-top: 120px;
+}
+
+
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {}
+@media only screen and (max-width : 1200px) {
+  
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -453,7 +452,13 @@ menu-top .navbar {
     padding-right: 20px;
     padding-left: 20px;
   }
-
+.h-title{
+  margin-top: 150px;
+  line-height: 30px;
+}
+.txt-rotate{
+margin-top: 70px;
+}
   .title h1 {
     font-size: 40px;
     line-height: 50px;
@@ -494,15 +499,15 @@ menu-top .navbar {
 
   .about-title {
     margin: 15px;
+    
   }
 
   .service-text {
     margin-bottom: 50px;
   }
 
-  .fa,
-  .fas {
-    padding-top: 35px;
+  .fab {
+    padding-top: 25px;
   }
 
   .service-box {
@@ -527,12 +532,15 @@ menu-top .navbar {
     display: none;
   }
 
-  .contact-title {
-    margin-bottom: 10px;
-  }
-
   .nav>li>a {
     color: #fff;
   }
-
+  .text-img{
+    font-size: 10px;
+    margin-top: 40px;
+    }
+  .contact-mail{
+    display: none;
+  }
 }
+
