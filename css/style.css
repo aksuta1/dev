@@ -31,7 +31,13 @@ body {
   border-bottom: 10px;
   font-weight: bold;
 }
-
+.dropdown-toggle{
+  padding-top: 4px;
+    }
+    .nav-link{
+      color:#22201e !important;
+ 
+    }
 .nav-menu:after {
   background-color: #46eb61;
   display: block;
