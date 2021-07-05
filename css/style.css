@@ -342,7 +342,20 @@ menu-top .navbar {
   right: 32%;
   transform: rotate(-25deg) 
 }
- 
+.form{
+  margin-top: 120px;
+}
+.btn-form{
+ margin-left: 0;
+ margin-top: 20px;
+}
+.form-control{
+  width: 414px;
+}
+.message{
+  margin-top: 40px;
+}
+
  /*=============copy==========================*/
 #copy {
   background: #3f464c;
@@ -417,9 +430,6 @@ menu-top .navbar {
   flex-basis: 100%;
 }
 
-.btn-info{
-  margin-left: 20px;
-}
 
 .contact-title {
   margin-bottom: 0px;
@@ -431,9 +441,7 @@ menu-top .navbar {
   margin-top: 60px;
 }
   
-.form{
-  margin-top: 120px;
-}
+
 
 
 /* Large Devices, Wide Screens */

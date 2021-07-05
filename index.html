@@ -9,13 +9,15 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:400,700' rel='stylesheet'
 		type='text/css'>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+		integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+	</script>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
- 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
- 
+
 
 </head>
 
@@ -291,7 +293,7 @@
 							</div>
 				</div>
 			</div>
-			</div>
+		</div>
 	</section>
 
 
@@ -310,21 +312,27 @@
 								</div>
 								<div class=" form col-md-6">
 									<div class="form-group">
-										<form action="./mail.php" method="post">
-											<div class="form-group col-md-12">
-												<input type="name" name="name" class="form-control" id="name" placeholder="Имя">
+										<form action="https://formspree.io/f/xpzklnpk" method="POST">
+											<div class="mail">
+												<label>
+													Ваш email:
+													<input type="name" name="_replyto" class="form-control" id="name" placeholder="адрес"> </label>
+ 											</div>
+											
 											</div>
-											<div class="form-group col-md-12">
-												<input type="email" name="email" class="form-control" id="email1" placeholder="e-mail">
+<div class="message">
+	<label>
+		Ваше сообщение:
+		<textarea class="form-control" name="message" rows="3" placeholder="Текст"></textarea>
+
+	</label>
+</div>
+											
+
+											<!-- your other form fields go here -->
+											<div class="btn-form">
+												<button type="submit" class="btn btn-info">Отправить</button>
 											</div>
-											<div class="form-group col-md-12">
-												<input type="phone" name="phone" class="form-control" id="phone" placeholder="Телефон">
-											</div>
-											<div class="form-group col-md-12">
-												<textarea class="form-control" name="message" rows="3"
-													placeholder="Сообщение"></textarea> 
-											</div>
-											<button type="submit" class="btn btn-info">Отправить</button>
 										</form>
 									</div>
 								</div>
